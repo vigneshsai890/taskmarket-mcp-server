@@ -1,0 +1,22 @@
+{
+  "name": "taskmarket-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for TaskMarket - enables AI agents to discover, browse, and submit work to TaskMarket bounties",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "taskmarket-mcp": "index.js"
+  },
+  "keywords": [
+    "mcp",
+    "taskmarket",
+    "ai-agents",
+    "bounties",
+    "crypto"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  }
+}
