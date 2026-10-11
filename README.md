@@ -1,3 +1,45 @@
+<div align="center">
+
+<img src="docs/architecture.svg" alt="TaskMarket MCP Server architecture map" width="100%" />
+
+</div>
+
+# TaskMarket MCP Server
+
+> Task discovery and analysis exposed through a small MCP surface.
+
+A compact JavaScript MCP server that lets compatible agents discover, browse and analyze TaskMarket bounties from their workflow.
+
+<div align="center">
+
+`JavaScript · Node.js · MCP SDK` &nbsp;·&nbsp; `MCP server → TaskMarket API → normalized agent-facing result`
+
+</div>
+
+## `01 / SYSTEM CARD`
+
+- **Primary boundary:** `agent tool call → server handler → TaskMarket remote API`
+- **Documentation stance:** architecture and presentation only; application source is intentionally untouched.
+- **Visual language:** Y2K terminal grid, brutalist labels, maximalist contrast, readable static SVG fallback.
+
+## `02 / ARCHITECTURE`
+
+The map above is a compact view of the repository's visible runtime boundary. It is designed to answer three questions quickly: where input enters, where policy or domain logic lives, and where external side effects leave the system.
+
+![Architecture map for TaskMarket MCP Server](docs/architecture.svg)
+
+## `03 / DESIGN NOTES`
+
+- The project intentionally keeps the agent-facing surface small and task-oriented.
+- The original usage documentation is preserved below the presentation layer.
+
+This upgrade adds documentation assets only. It does not change source files, dependency manifests, tests, workflows or runtime configuration.
+
+## `04 / EXISTING PROJECT DOCUMENTATION`
+
+<details open>
+<summary>Read the original project notes</summary>
+
 # TaskMarket MCP Server
 
 An MCP (Model Context Protocol) server that integrates [TaskMarket](https://taskmarket.dev) into any MCP-compatible AI agent — Claude Code, Cursor, Windsurf, or any custom agent using the MCP SDK.
@@ -62,3 +104,6 @@ Uses the public [TaskMarket API](https://api.taskmarket.dev/openapi.json). No au
 ## License
 
 MIT
+
+</details>
+
